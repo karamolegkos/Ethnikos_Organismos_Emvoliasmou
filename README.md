@@ -10,6 +10,6 @@ This project was made using HTML, CSS, JS (JQuery, Ajax) and the Bootstrap Frame
 
 To Run the application download the files of the project, extract them and then just go to the file below:
 
-Web_App/index.html
+- Web_App/index.html
 
 You are now ready to browse the site :)
