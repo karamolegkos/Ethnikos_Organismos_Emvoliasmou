@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="el">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+
+    <!-- My favicon -->
+    <link rel="icon" href="./images/favicon.png" type="image/png" />
+
+    <!-- My styles-->
+    <link rel="stylesheet" type="text/css" href="./styles/default_style.css" />
+    <title>Κλείστε ραντεβού</title>
+  </head>
+  <body>
+    <!-- My Nav Bar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <a class="navbar-brand" href="./index.html">
+        E.O.E
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./news.html">Νέα</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./common_questions.html">Ερωτήσεις</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./vaccination.html"
+              >Ραντεβού για εμβολιασμό</a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./statistics.html">Στατιστικά</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./contact.html">Επικοινωνία</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- My Main Content -->
+    <div class="container my_back">
+      <br />
+      <h3>
+        Κλείστε ραντεβού για να εμβολιαστήτε απέναντι στον Covid-19 και τον
+        SARS-CoV-2!
+      </h3>
+      <p>
+        Συμπληρώστε την παρακάτω φόρμα και επιλέξτε την επιθημητή σας ώρα και
+        ημέρα για να κλείσετε ραντεβού.
+      </p>
+      <br />
+      <form onsubmit="return false">
+        <div class="form-row">
+          <!-- Name -->
+          <div class="col-md-4 mb-3">
+            <label for="NameInput">Όνομα:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="NameInput"
+              placeholder="Όνομα"
+              value=""
+              required
+            />
+          </div>
+          <!-- Surname -->
+          <div class="col-md-4 mb-3">
+            <label for="SurnameInput">Επίθετο:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="SurnameInput"
+              placeholder="Επίθετο"
+              value=""
+              required
+            />
+          </div>
+        </div>
+        <!-- Phone -->
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="PhoneInput">Τηλέφωνο:</label>
+            <input
+              type="number"
+              class="form-control"
+              id="PhoneInput"
+              placeholder="6955555555"
+              min="1000000000"
+              max="9999999999"
+              required
+            />
+          </div>
+        </div>
+        <!-- Email -->
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="EmailInput">E-mail:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="EmailInput"
+              placeholder="mail@domain.com"
+              required
+            />
+          </div>
+        </div>
+        <!-- AMKA -->
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="AmkaInput">AMKA:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="AmkaInput"
+              placeholder="01019955555"
+              required
+            />
+          </div>
+        </div>
+        <!-- Gender -->
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <div class="form-group">
+              <label for="GenderInput">Το Φύλο σας:</label>
+              <select class="form-control" id="GenderInput">
+                <option>Άνδρας</option>
+                <option>Γυναίκα</option>
+                <option>Προτιμώ να μην πω</option>
+                <option>Άλλο</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!-- Button -->
+        <button class="btn btn-primary" type="submit" id="submitButton">
+          Κλείστε ραντεβού!
+        </button>
+      </form>
+      <br />
+    </div>
+
+    <!-- My Extra Content -->
+    <div class="container my_back" id="extraContent" onsubmit="return false">
+      <h3>Το ραντεβού σας</h3>
+      <p>
+        Παρακάτω σας δίνουμε μία πρόταση για ραντεβού, μπορείτε να επιλέξετε
+        άλλη ημέρα και ώρα αν εσείς το επιθυμητέ, εντός των επόμενων δύο
+        εβδομάδων!
+      </p>
+      <form>
+        <!-- Appointment Date -->
+        <div class="form-row">
+          <div class="col-md-6">
+            <label for="appointmentDate">Ημερομηνία ραντεβού:</label>
+            <input
+              type="date"
+              class="form-control"
+              id="appointmentDate"
+              min="2021-05-09"
+              value="2021-05-09"
+              required
+            />
+          </div>
+        </div>
+        <br />
+        <!-- Appointment Hour -->
+        <div class="form-row">
+          <div class="col-md-6">
+            <label for="appointmentHour">Ώρα ραντεβού:</label>
+            <input
+              type="time"
+              class="form-control"
+              id="appointmentHour"
+              value="09:00"
+              min="09:00"
+              max="20:00"
+              required
+            />
+          </div>
+        </div>
+        <br />
+        <!-- Sumbit Button -->
+        <button class="btn btn-primary" type="submit" id="finalSubmit">
+          Οριστική Υποβολή
+        </button>
+        <!-- Cancel Button -->
+        <button class="btn btn-primary" type="submit" id="cancelButton">
+          Ακύρωση
+        </button>
+      </form>
+      <div class="container">
+        <div class="row">
+          <div class="alert alert-success" role="alert" id="successMessage">
+            Το ραντεβού σας έχει κλείσει με επιτυχία!
+          </div>
+          <div class="alert alert-danger" role="alert" id="dangerMessage">
+            Δεν υπάρχουν διαθέσιμα ραντεβού για την ημέρα και ώρα που δώσατε.
+            <br />
+            Θα μπορούσατε να διαλέξετε κάποια άλλη στιγμή;
+          </div>
+          <div class="alert alert-warning" role="alert" id="warningMessage">
+            Κάτι πήγε στραβά!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- My Footer -->
+    <footer class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="text-center">
+              <div class="text-light">
+                Τηλ: 210-555-5555
+                <br />
+                Κιν: 69-55-55-5555
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="text-center">
+              <div class="text-light">
+                &copy; 2021 Εθνικός Οργανισμός Εμβολιασμού.
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="text-center">
+              <div class="text-light">
+                <address>
+                  Email: <a href="mailto:p.karamolegos@yahoo.gr">eoe@gov.gr</a>
+                </address>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- A script to make user able to cancel the appointment flow -->
+    <script>
+      let cancelAppointment = function () {
+        // refirect user to the home page
+        location.replace("./index.html");
+      };
+
+      document
+        .getElementById("cancelButton")
+        .addEventListener("click", cancelAppointment);
+    </script>
+
+    <!-- A script for making random appointment dates -->
+    <script>
+      // fixes the month format
+      function fixMonth(month) {
+        let myMonth = parseInt(month);
+        myMonth++;
+        if (myMonth < 10) {
+          myMonth = "0" + myMonth;
+        }
+        return myMonth;
+      }
+      // fixes the day format
+      function fixDay(day) {
+        let myDay = parseInt(day);
+        if (day < 10) {
+          myDay = "0" + myDay;
+        }
+        return myDay;
+      }
+      // Makes a string date format
+      let makeDate = function (date) {
+        let str = "";
+        str += date.getFullYear();
+        str += "-";
+        str += fixMonth(date.getMonth());
+        str += "-";
+        str += fixDay(date.getDate());
+        return str;
+      };
+
+      let fixHour = function (hour) {
+        if (hour < 10) {
+          return "0" + hour;
+        }
+        return hour;
+      };
+
+      let fixMinutes = function (minutes) {
+        if (minutes < 10) {
+          return "0" + minutes;
+        }
+        return minutes;
+      };
+
+      // Give a random valid appointment in the first 7 days after today
+      let chooseNewAppointment = function () {
+        let minDate = new Date();
+        minDate.setDate(minDate.getDate() + 1);
+        let maxDate = new Date();
+        maxDate.setDate(maxDate.getDate() + 14);
+        strMinDate = makeDate(minDate);
+        strMaxDate = makeDate(maxDate);
+
+        let appointmentDate = document.getElementById("appointmentDate");
+        let appointmenthour = document.getElementById("appointmentHour");
+
+        let rand = Math.floor(Math.random() * 7) + 1;
+        let randomDate = new Date();
+        randomDate.setDate(randomDate.getDate() + rand);
+        strRandomDate = makeDate(randomDate);
+
+        appointmentDate.value = strRandomDate;
+        appointmentDate.min = strMinDate;
+        appointmentDate.max = strMaxDate;
+
+        rand = Math.floor(Math.random() * 11) + 9;
+        let strHour = fixHour(rand);
+        rand = Math.floor(Math.random() * 60);
+        let strMinute = fixHour(rand);
+        strFullHour = strHour + ":" + strMinute;
+
+        appointmenthour.value = strFullHour;
+      };
+
+      document.addEventListener("DOMContentLoaded", chooseNewAppointment);
+    </script>
+
+    <!-- My script for closing appointments-->
+    <script>
+      // A function to open the extra content
+      let openExtraContent = function () {
+        let extraContent = document.getElementById("extraContent");
+        extraContent.style.display = "block";
+      };
+
+      // A function to delete the extra content
+      let deleteExtraContent = function () {
+        let extraContent = document.getElementById("extraContent");
+        extraContent.style.display = "none";
+
+        // it will also hide the success, warning and danger messages!
+        let successMessage = document.getElementById("successMessage");
+        successMessage.style.display = "none";
+        let dangerMessage = document.getElementById("dangerMessage");
+        dangerMessage.style.display = "none";
+        let warningMessage = document.getElementById("warningMessage");
+        warningMessage.style.display = "none";
+      };
+
+      // A function to test the first form
+      let checkForm1 = function () {
+        let readyMessage = true;
+        let name = document.getElementById("NameInput").value;
+        let surname = document.getElementById("SurnameInput").value;
+        let phone = document.getElementById("PhoneInput").value;
+        let email = document.getElementById("EmailInput").value;
+        let amka = document.getElementById("AmkaInput").value;
+
+        if (name == "") readyMessage = false;
+        if (surname == "") readyMessage = false;
+        if (phone == "") readyMessage = false;
+        if (phone < 1000000000) readyMessage = false;
+        if (phone > 9999999999) readyMessage = false;
+        if (email == "") readyMessage = false;
+        if (amka == "") readyMessage = false;
+
+        if (readyMessage) {
+          return true;
+        } else {
+          return false;
+        }
+      };
+
+      // A function to test the second form
+      let checkForm2 = function () {
+        let readyMessage = true;
+        let hour = document.getElementById("appointmentHour").value;
+
+        let onlyHour = hour[0] + hour[1];
+        let intHour = parseInt(onlyHour);
+        if (intHour < 9 || intHour > 20) {
+          readyMessage = false;
+        }
+
+        return readyMessage;
+      };
+
+      // A function orchestrating the start of an appointment
+      let startAppointment = function () {
+        let formReady = checkForm1();
+        if (!formReady) {
+          alert(
+            "Πρέπει να συμπληρώσετε σωστά, όλα τα στοιχεία σας για να προχωρήσετε στο να κλείσετε ραντεβού!"
+          );
+          deleteExtraContent();
+          return;
+        }
+        openExtraContent();
+      };
+
+      let accepted = function () {
+        let successMessage = document.getElementById("successMessage");
+        successMessage.style.display = "block";
+        let dangerMessage = document.getElementById("dangerMessage");
+        dangerMessage.style.display = "none";
+        let warningMessage = document.getElementById("warningMessage");
+        warningMessage.style.display = "none";
+      };
+
+      let regected = function () {
+        let successMessage = document.getElementById("successMessage");
+        successMessage.style.display = "none";
+        let dangerMessage = document.getElementById("dangerMessage");
+        dangerMessage.style.display = "block";
+        let warningMessage = document.getElementById("warningMessage");
+        warningMessage.style.display = "none";
+      };
+
+      let badReq = function () {
+        let successMessage = document.getElementById("successMessage");
+        successMessage.style.display = "none";
+        let dangerMessage = document.getElementById("dangerMessage");
+        dangerMessage.style.display = "none";
+        let warningMessage = document.getElementById("warningMessage");
+        warningMessage.style.display = "block";
+      };
+
+      let callAPI = function (appointment) {
+        $.ajax({
+          url: "https://us-central1-unipi-aps.cloudfunctions.net/emvolioDate",
+          method: "POST",
+          data: appointment,
+          dataType: "json",
+          statusCode: {
+            200: function () {
+              accepted();
+            },
+            400: function () {
+              regected();
+            },
+            500: function () {
+              badReq();
+            }
+          }
+        });
+      };
+
+      // A function orchestrating the creation of the appointments
+      let makeAppointment = function () {
+        let formReady = checkForm2();
+        if (!formReady) {
+          alert(
+            "Τα ραντεβού μπορούν να πραγματοποιηθούν στις ώρες 09:00 - 20:00!"
+          );
+          return;
+        }
+        let date = document.getElementById("appointmentDate").value;
+        let hour = document.getElementById("appointmentHour").value;
+        let data = {
+          appointment_date: date,
+          appontment_hour: hour
+        };
+        callAPI(data);
+      };
+
+      // An event listener for the first button
+      document
+        .getElementById("submitButton")
+        .addEventListener("click", startAppointment);
+      // An event listener for the second button
+      document
+        .getElementById("finalSubmit")
+        .addEventListener("click", makeAppointment);
+      // An event listener to not show the appointment date and time at the start
+      document.addEventListener("DOMContentLoaded", deleteExtraContent);
+    </script>
+
+    <!-- changed to not use the slim version-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!--
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

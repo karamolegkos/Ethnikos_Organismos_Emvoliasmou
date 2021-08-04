@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="el">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+
+    <!-- My favicon -->
+    <link rel="icon" href="./images/favicon.png" type="image/png" />
+
+    <!-- My styles-->
+    <link rel="stylesheet" type="text/css" href="./styles/default_style.css" />
+    <title>Συχνές Ερωτήσεις</title>
+  </head>
+  <body>
+    <!-- My nav bar-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <a class="navbar-brand" href="./index.html">
+        E.O.E
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./news.html">Νέα</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./common_questions.html">Ερωτήσεις</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./vaccination.html"
+              >Ραντεβού για εμβολιασμό</a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./statistics.html">Στατιστικά</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./contact.html">Επικοινωνία</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br />
+
+    <!-- My Accordion -->
+    <div class="container">
+      <h2>Συχνές Ερωτήσεις</h2>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header my_header" id="headingOne">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-ligh"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                <div class="text-left">
+                  Πόσο αποτελεσματικό είναι το εμβόλιο για τον κορωνοϊό
+                  SARS-CoV-2;
+                </div>
+              </button>
+            </h5>
+          </div>
+
+          <div
+            id="collapseOne"
+            class="collapse show"
+            aria-labelledby="headingOne"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <p>
+                Αυτή τη στιγμή πολλά εμβόλια για τον κορωνοϊό SARS-CoV-2
+                βρίσκονται σε διαδικασία κλινικών δοκιμών. Το πόσο
+                αποτελεσματικό είναι ένα εμβόλιο εξαρτάται πάντα από το
+                συγκεκριμένο εμβόλιο, τη σωστή διενέργεια του εμβολιασμού και
+                από παράγοντες που αφορούν την ανοσιακή απάντηση του κάθε
+                ατόμου. Τα πρώτα εμβόλια που είναι προς έγκριση φαίνονται να
+                είναι αρκετά αποτελεσματικά, έως και 95%. Οι αρμόδιοι ελεγκτικοί
+                μηχανισμοί που εγκρίνουν την κυκλοφορία των εμβολίων θέτουν την
+                αποτελεσματικότητα και την ασφάλεια των εμβολίων ως
+                προτεραιότητα.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header my_header" id="headingTwo">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-ligh collapsed"
+                data-toggle="collapse"
+                data-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                <div class="text-left">
+                  Γιατί να κάνω εμβόλιο για τον κορωνοϊό SARS-CoV-2;
+                </div>
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <p>
+                Τα εμβόλια παρασκευάζονται με σκοπό την αντιμετώπιση νοσημάτων
+                που δεν είναι δυνατόν να ελεγχθούν μόνο με την εφαρμογή άλλων
+                μέτρων δημόσιας υγείας. Στόχος τους είναι να περιορίσουν και να
+                εξαλείψουν νοσήματα με υψηλή μεταδοτικότητα, με σοβαρές
+                επιπτώσεις στην υγεία των ανθρώπων, με υψηλή θνητότητα, με
+                μεγάλη επιβάρυνση στα συστήματα υγείας, αλλά και με δυσμενείς
+                οικονομικές επιπτώσεις στην κοινωνία.
+              </p>
+              <p>
+                Ο κορωνοϊός SARS-CoV-2 είναι ένας νέος ιός που μέσα σε ένα χρόνο
+                από την εμφάνισή του επηρέασε δραματικά τις ζωές όλων των
+                ανθρώπων παγκοσμίως. Έχει υψηλή μεταδοτικότητα με αποτέλεσμα να
+                είναι αδύνατο να ελεγχθεί μόνο με την εφαρμογή των άλλων, πιο
+                γνωστών σε όλους μας, μέτρων δημόσιας υγείας, επιβαρύνει σοβαρά
+                σε πολλές περιπτώσεις την υγεία των νοσούντων, μπορεί να
+                οδηγήσει σε απώλεια πολλών ανθρώπινων ζωών ακόμα υγιών ατόμων,
+                επηρεάζει σημαντικά την καθημερινότητα όλων, δοκιμάζει τα
+                συστήματα υγείας και δημιουργεί ανεπανόρθωτες οικονομικές
+                επιπτώσεις σε όλον τον πλανήτη.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header my_header" id="headingThree">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-ligh collapsed"
+                data-toggle="collapse"
+                data-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                <div class="text-left">
+                  Μπορεί να κάνω εμβόλιο και παρ' όλα αυτά να νοσήσω από
+                  COVID-19;
+                </div>
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseThree"
+            class="collapse"
+            aria-labelledby="headingThree"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <p>
+                Κανένα εμβόλιο δεν είναι 100% αποτελεσματικό. Άρα μπορεί σε
+                κάποιες περιπτώσεις να ασθενήσει κάποιος από το νέο κορωνοϊό
+                παρόλο που έκανε το εμβόλιο. Επομένως θα πρέπει οι πολίτες να
+                συνεχίσουν να παίρνουν τις συνιστώμενες προφυλάξεις για την
+                αποφυγή μόλυνσης δηλαδή οι εμβολιασμένοι θα πρέπει να συνεχίσουν
+                τη χρήση μάσκας, την τήρηση κοινωνικής απόστασης, την τακτική
+                και σχολαστική υγιεινή των χεριών και την καθαριότητα του χώρου
+                όπου ζουν ή εργάζονται. Τα εμβόλια έναντι της νόσου COVID-19
+                φαίνεται ότι μειώνουν την πιθανότητα να νοσήσει κάποιος από τη
+                νόσο. Κάθε εμβόλιο έχει υποβληθεί σε κλινικές δοκιμές, σε
+                διάφορες χώρες και έχει αποδεκτό προφίλ ασφάλειας. Ήδη έχουν
+                χορηγηθεί περισσότερες από 65.000.000 δόσεις σε 56 χώρες
+                παγκοσμίως. Χρειάζονται μερικές εβδομάδες για να μπορέσει
+                κάποιος να αναπτύξει ανοσία και να είναι προστατευμένος μετά τη
+                χορήγηση του εμβολίου. Μερικοί άνθρωποι ενδέχεται να νοσήσουν
+                από COVID-19 παρά το ότι έχουν εμβολιαστεί, αλλά η νόσηση μπορεί
+                να είναι λιγότερο σοβαρή.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header my_header" id="headingFour">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-ligh collapsed"
+                data-toggle="collapse"
+                data-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                <div class="text-left">
+                  Εφόσων το εμβόλιο δεν με προστατεύει 100% από τη νόσηση από
+                  τον νέο κορωνοϊό γιατί τελικά να το κάνω;
+                </div>
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseFour"
+            class="collapse"
+            aria-labelledby="headingFour"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <p>
+                Τα νέα εμβόλια όπως προκύπτει από τις κλινικές δοκιμές μειώνουν
+                τον κίνδυνο εκδήλωσης συμπτωμάτων και πιθανά τον κίνδυνο σοβαρής
+                νόσησης από τον ιό. Αυτό είναι πολύ σημαντικό, γιατί ταυτόχρονα
+                μειώνεται ο κίνδυνος νοσηλειών, ο κίνδυνος απώλειας ανθρώπινων
+                ζωών και πιθανά ο κίνδυνος μακροχρόνιων επιπλοκών που προκαλεί ο
+                ιός σε κάποιους ασθενείς, όπως επιπλοκές από το καρδιαγγειακό
+                και το αναπνευστικό σύστημα.
+              </p>
+              <p>
+                Ανάλογη εμπειρία τέτοιας αποτελεσματικότητας υπάρχει και με άλλα
+                εμβόλια που χρησιμοποιούνται επί έτη στην ιατρική. Για
+                παράδειγμα το εμβόλιο της γρίπης κατά του H1N1 δεν είναι το ίδιο
+                αποτελεσματικό κάθε έτος στον έλεγχο του νοσήματος. Διάφοροι
+                παράγοντες, όπως η ικανότητα του ιού να μεταλλάσσεται, το
+                στέλεχος του ιού που θα επικρατήσει κάθε χρόνο, η γεωγραφική
+                περιοχή, μπορεί να επηρεάσουν την αποτελεσματικότητα του
+                εμβολίου στον έλεγχο του νοσήματος. Ακόμη όμως και λιγότερο
+                αποτελεσματικά εμβόλια γρίπης στο παρελθόν φαίνεται ότι συνολικά
+                μειώνουν τον κίνδυνο σοβαρής νόσησης στον πληθυσμό.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header my_header" id="headingFive">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-ligh collapsed"
+                data-toggle="collapse"
+                data-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                <div class="text-left">
+                  Μπορεί να κάνω το εμβόλιο και να μην νοσήσω αλλά να είμαι
+                  ασυπτωματικός φορέας του ιού;
+                </div>
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseFive"
+            class="collapse"
+            aria-labelledby="headingFive"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <p>
+                Δεν γνωρίζουμε ακόμα αν όσοι εμβολιαστούν με τα νέα εμβόλια
+                μπορεί να μολυνθούν από τον ιό και να είναι ασυμπτωματικοί, άρα
+                μπορεί ακόμα να μεταδίδουν υπό αυτές τις συνθήκες τον ιό. Για
+                αυτό είναι σημαντικό ακόμα και όσοι εμβολιαστούν να εφαρμόζουν
+                τα υπόλοιπα μέτρα δημόσιας υγείας κατά του νέου ιού, δηλαδή τη
+                χρήση μάσκας, την τήρηση κοινωνικής απόστασης, την τακτική και
+                σχολαστική υγιεινή των χεριών και την καθαριότητα του χώρου όπου
+                ζουν ή εργάζονται. Προς το παρόν από τις κλινικές δοκιμές
+                φαίνεται ότι τα νέα εμβόλια προστατεύουν περισσότερο από τη
+                νόσηση από COVID-19 παρά μειώνουν σημαντικά το κίνδυνο μετάδοσης
+                του ιού. Μένει να δούμε αν τα νέα εμβόλια που αναμένεται να
+                ολοκληρώσουν τις απαραίτητες κλινικές δοκιμές θα είναι
+                αποτελεσματικά στην μείωση της μετάδοσης του ιού.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header my_header" id="headingSix">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-ligh collapsed"
+                data-toggle="collapse"
+                data-target="#collapseSix"
+                aria-expanded="false"
+                aria-controls="collapseSix"
+              >
+                <div class="text-left">
+                  Υπάρχει περίπτωση να νοσήσω από τον κορωνοϊό SARS-CoV-2
+                  εξαιτίας του εμβολίου;
+                </div>
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseSix"
+            class="collapse"
+            aria-labelledby="headingSix"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <p>
+                Κανένα από τα εμβόλια προς μελέτη και έγκριση για τον κορωνοϊό
+                SARS-CoV-2 δεν περιέχουν ολόκληρο τον ιό. Τα περισσότερα πλέον
+                εμβόλια που χρησιμοποιούνται στην ιατρική περιέχουν μόνο τμήματα
+                των ιών που είναι ικανά να οδηγήσουν στην παραγωγή
+                προστατευτικών αντισωμάτων κατά του ιού στο άτομο που θα
+                χορηγηθούν. Έτσι ο εμβολιαζόμενος δεν κινδυνεύει σε καμία
+                περίπτωση να αρρωστήσει από τον κορωνοϊό εξαιτίας του εμβολίου.
+              </p>
+              <p>
+                Υπάρχει όμως η πιθανότητα να έχει ήδη κολλήσει τη νόσο COVID-19
+                και να μην το έχει συνειδητοποιήσει αν τα συμπτώματα γίνουν
+                έκδηλα μόνο μετά τον εμβολιασμό. Αν και ένας ήπιος πυρετός
+                μπορεί να εμφανιστεί εντός μιας ή δύο ημερών από τον εμβολιασμό,
+                αν κανείς παρουσιάσει άλλα συμπτώματα της νόσου COVID-19 (όπως
+                νέο συνεχόμενο βήχα, υψηλό πυρετό ή ο πυρετός διαρκεί
+                περισσότερο, ανοσμία, αγευσία) θα πρέπει να παραμείνει στο σπίτι
+                και να προγραμματίσει να κάνει εργαστηριακό έλεγχο.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header my_header" id="headingSeven">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-ligh collapsed"
+                data-toggle="collapse"
+                data-target="#collapseSeven"
+                aria-expanded="false"
+                aria-controls="collapseSeven"
+              >
+                <div class="text-left">
+                  Ο εμβολιασμός για τον κορωνοϊό SARS-CoV-2 θα είναι
+                  υποχρεωτικός;
+                </div>
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseSeven"
+            class="collapse"
+            aria-labelledby="headingSeven"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <p>
+                Ο εμβολιασμός για τον νέο κορωνοϊό SARS-CoV-2 δεν θα είναι
+                υποχρεωτικός. Ο εμβολιασμός έναντι των διαφόρων νοσημάτων
+                αποτελεί σύσταση.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header my_header" id="headingEight">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-ligh collapsed"
+                data-toggle="collapse"
+                data-target="#collapseEight"
+                aria-expanded="false"
+                aria-controls="collapseEight"
+              >
+                <div class="text-left">
+                  Έχω εκτεθεί στον κορωνοϊό SARS-CoV-2 ή έχω νοσήσει από
+                  COVID-19, Χρειάζεται να κάνω το εμβόλιο;
+                </div>
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseEight"
+            class="collapse"
+            aria-labelledby="headingEight"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <p>
+                Σύμφωνα με τα δεδομένα από τις κλινικές δοκιμές, τα εμβόλια mRNA
+                για την COVID-19 είναι ασφαλή σε άτομα με ένδειξη προηγούμενης
+                λοίμωξης από SARS-CoV-2. Η δυνατότητα εμβολιασμού πρέπει να
+                προσφέρεται ανεξάρτητα από το ιστορικό προηγούμενης
+                συμπτωματικής ή ασυμπτωματικής λοίμωξης από SARS-CoV-2. Δεν
+                συστήνεται έλεγχος με PCR ή με rapid test αντιγόνου ή ορολογικός
+                έλεγχος αντισωμάτων προκειμένου να ληφθεί απόφαση για
+                εμβολιασμό.
+              </p>
+              <p>
+                Ο εμβολιασμός συμπτωματικών ατόμων με οξεία λοίμωξη SARS-CoV-2
+                πρέπει να αναβάλλεται μέχρι την ανάρρωση και μέχρις ότου
+                πληρούνται τα κριτήρια διακοπής της απομόνωσής τους. Η σύσταση
+                αυτή ισχύει για όσα άτομα έχουν οξεία λοίμωξη SARS-CoV-2 και
+                πρόκειται να λάβουν την 1η είτε τη 2η δόση του εμβολίου. Παρότι
+                δεν έχει οριστεί ελάχιστο επιθυμητό μεσοδιάστημα μεταξύ της
+                λοίμωξης από SARS-CoV-2 και του εμβολιασμού, τα τρέχοντα
+                δεδομένα υποδηλώνουν ότι οι επαναμολύνσεις είναι σπάνιες κατά το
+                χρονικό διάστημα των 90 ημερών μετά την αρχική μόλυνση. Σύμφωνα
+                με τα παραπάνω, εάν είναι επιθυμητό, ο εμβολιασμός των ατόμων με
+                τεκμηριωμένη οξεία λοίμωξη από SARS-CoV-2 μπορεί να καθυστερήσει
+                μέχρι το τέλος της περιόδου των 90 ημερών.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header my_header" id="headingNine">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-ligh collapsed"
+                data-toggle="collapse"
+                data-target="#collapseNine"
+                aria-expanded="false"
+                aria-controls="collapseNine"
+              >
+                <div class="text-left">
+                  Τα εμβόλια κατά του κορωνοϊού SARS-CoV-2 είναι ασφαλή; Έχουν
+                  ανεπιθύμητες ενέργειες; Ποιες είναι αυτές;
+                </div>
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseNine"
+            class="collapse"
+            aria-labelledby="headingNine"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <p>
+                Τα σύγχρονα δεδομένα από τις κλινικές δοκιμές δείχνουν ότι τα
+                νέα εμβόλια κατά του κορωνοϊού SARS-CoV-2 που βρίσκονται σε
+                τελική φάση έγκρισης ή έχουν πάρει έγκριση έχουν αποδεκτό προφίλ
+                ασφάλειας. Οι περισσότερες ανεπιθύμητες ενέργειες των εμβολίων
+                παρουσιάζονται τις πρώτες εβδομάδες με μήνες μετά από τη
+                χορήγησή τους και οι ελεγκτικοί μηχανισμοί θέτουν ως προϋπόθεση
+                την παρέλευση αυτού του διαστήματος στις κλινικές δοκιμές προτού
+                το εμβόλιο προχωρήσει σε περαιτέρω διαδικασία ελέγχου και
+                έγκρισης.
+              </p>
+              <p>
+                Όπως όλα τα γνωστά εμβόλια έτσι και τα νέα κατά του SARS-CoV-2
+                μπορεί να έχουν ανεπιθύμητες ενέργειες. Οι περισσότερες από
+                αυτές είναι ήπιες και βραχυπρόθεσμες, και δεν εμφανίζονται σε
+                όλους. Τέτοιες ανεπιθύμητες ενέργειες είναι αίσθημα πόνου και
+                ευαισθησίας στο χέρι όπου χορηγήθηκε το εμβόλιο που τείνει να
+                χειροτερεύει περίπου 1-2 ημέρες μετά το εμβόλιο, αίσθημα
+                κόπωσης, πονοκέφαλο, γενικούς πόνους ή ήπια συμπτώματα τύπου
+                γρίπης. Αν και o πυρετός δεν είναι σπάνιος για δύο έως τρεις
+                ημέρες, η υψηλή θερμοκρασία είναι ασυνήθιστη και μπορεί να
+                υποδηλώνει νόσο COVID-19 ή άλλη λοίμωξη. Μια ασυνήθιστη
+                παρενέργεια είναι η λεμφαδενοπάθεια. Η ανάπαυση και η λήψη
+                κανονικής δόσης παρακεταμόλης βοηθούν να αισθανθεί κάποιος
+                καλύτερα. Τα συμπτώματα από τις παρενέργειες συνήθως διαρκούν
+                λιγότερο από μία εβδομάδα. Ήπια συμπτώματα μετά τη πρώτη δόση,
+                δεν αποτελούν αντένδειξη για εμβολιασμό με δεύτερη δόση, που
+                είναι αναγκαία για την καλύτερη προστασία έναντι του ιού. Αν τα
+                συμπτώματα επιδεινώνονται ή υπάρχει ανησυχία καλό είναι να
+                ενημερώνεται ο θεράπων ιατρός προκειμένου να υπάρξει σωστή
+                αξιολόγηση. Οι ανεπιθύμητες ενέργειες των εμβολίων δηλώνονται
+                μέσω του συστήματος της Κίτρινης Κάρτας την οποία μπορεί κανείς
+                να αναζητήσει διαδικτυακά <br />
+                (<a href="https://www.eof.gr/web/guest/yellowgeneral"
+                  >https://www.eof.gr/web/guest/yellowgeneral</a
+                >).
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header my_header" id="headingTen">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-ligh collapsed"
+                data-toggle="collapse"
+                data-target="#collapseTen"
+                aria-expanded="false"
+                aria-controls="collapseTen"
+              >
+                <div class="text-left">
+                  Τι πρέπει να κάνει κάποιος αν δεν είναι καλά όταν είναι το
+                  επόμενο ραντεβού για εμβολιασμό;
+                </div>
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseTen"
+            class="collapse"
+            aria-labelledby="headingTen"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <p>
+                Αν κάποιος δεν είναι καλά, είναι καλύτερα να περιμένει έως ότου
+                αναρρώσει για να εμβολιαστεί, αλλά θα πρέπει αυτό να γίνει το
+                συντομότερο δυνατό. Δεν πρέπει κάποιος να προσέλθει σε
+                προγραμματισμένο ραντεβού για εμβολιασμό αν είναι σε
+                αυτοαπομόνωση, ή σε αναμονή για τεστ COVID-19 ή δεν είναι
+                σίγουρος ότι είναι υγιής.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- My footer -->
+    <footer class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="text-center">
+              <div class="text-light">
+                Τηλ: 210-555-5555
+                <br />
+                Κιν: 69-55-55-5555
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="text-center">
+              <div class="text-light">
+                &copy; 2021 Εθνικός Οργανισμός Εμβολιασμού.
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="text-center">
+              <div class="text-light">
+                <address>
+                  Email: <a href="mailto:p.karamolegos@yahoo.gr">eoe@gov.gr</a>
+                </address>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="el">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- My favicon -->
+    <link rel="icon" href="./images/favicon.png" type="image/png" />
+
+    <!-- My styles-->
+    <link rel="stylesheet" type="text/css" href="./styles/default_style.css" />
+    <title>Τα νέα μας</title>
+  </head>
+  <body>
+    <!-- My Go to the top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <!-- My Navigation Bar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <a class="navbar-brand" href="./index.html">
+        E.O.E
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./news.html">Νέα</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./common_questions.html">Ερωτήσεις</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./vaccination.html"
+              >Ραντεβού για εμβολιασμό</a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./statistics.html">Στατιστικά</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./contact.html">Επικοινωνία</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- My News -->
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h1>Τα νέα μας!</h1>
+        </div>
+      </div>
+      <!-- Our News-->
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <ul class="list-group shadow">
+            <!-- Listing our news -->
+            <li class="list-group-item" id="news1">
+              <div class="container">
+                <div class="col-md-12">
+                  <img
+                    src="./news/news1.png"
+                    width="300"
+                    align="left"
+                    alt="My first news"
+                  />
+                  <h5>Τα κρούσματα στην Ελλάδα πέφτουν!</h5>
+                  <p>
+                    Το News4Health αποτύπωσε σε γραφήματα την επιδημιολογική
+                    εικόνα σε κρούσματα και θανάτους τις πρώτες 5 εβδομάδες σε
+                    lockdown. Αν και τα κρούσματα έχουν αρχίσει να υποχωρούν
+                    σημαντικά, οι θάνατοι παραμένουν ψηλά και να προβληματίζουν.
+                  </p>
+                  <p>
+                    Μετά από μελέτη που έγινε σχετικά με τον εβδομαδιαίο αριθμό
+                    κρουσμάτων κορονοϊού καθώς και των θανάτων στις πρώτες 5
+                    εβδομάδες σχηματίστηκαν κάποια γραφήματα που απεικονίζουν
+                    την πορεία του κορονοϊού. Για να διευκολυνθεί η καταμέτρηση
+                    ως το ξεκίνημα της πρώτης εβδομάδας θεωρήθηκε η Δευτέρα 9
+                    Νοέμβρη. Η καταμέτρηση ολοκληρώθηκε την Κυριακή 13 Δεκέμβρη.
+                  </p>
+                  <p>
+                    Όσον αφορά τα κρούσματα είναι σαφές ότι αν και καθυστερημένα
+                    υπήρξε μείωση σημανική των θετικών περιστατικών από την 3η
+                    εβδομάδα και έπειτα. Έτσι, από τα 2502 που συναντούσαμε
+                    ημερησίως κατά μέσο όρο την πρώτη εβδομάδα υποχωρήσαμε στα
+                    1304 στην εβδομάδα που μας πέρασε.
+                  </p>
+                  <p>
+                    Αναλυτικά τα κρούσματα και οι θάνατοι ανα εβδομάδα οι οποίοι
+                    είναι δυστυχώς ακόμα σε υψηλά επίπεδα
+                    <a
+                      class="my_link"
+                      href="https://www.news4health.gr/ygeia/5453/analysi-ta-kroysmata-pou-peftoun-kai-oi-thanatoi-pou-epimenoun-meta-apo-5-evdomades-lockdown-graphs"
+                      >ΕΔΩ</a
+                    >.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item" id="news2">
+              <div class="container">
+                <div class="col-md-12">
+                  <img
+                    src="./news/news2.png"
+                    width="300"
+                    align="left"
+                    alt="My second news"
+                  />
+                  <h5>
+                    Νέα ποσότητα εμβολίων εισήχθησαν στην Ελλάδα!
+                  </h5>
+                  <p>
+                    Πάνω από ένα χρόνο τώρα παλεύει η Ελλάδα μας ενάντια στην
+                    μάστιγα του Covid-19. Πλέον όμως ξεκινάμε να βλέπουμε το φως
+                    στο τούνελ με νέα ποσότητα 1ος εκατομμυρίων εμβολίων, να
+                    εισέρχονται στα σύνορα της χώρας μας.
+                  </p>
+                  <p>
+                    Με τα δεδομένα που κατέχουμε αυτήν την στιγμή, πάνω από το
+                    10% του πληθυσμού μας, έχει εμβολιαστεί με την δεύτερη δόση
+                    απέναντι στον Covid-19. Συνεπώς, φαίνεται αυτό το μεγάλο και
+                    επίπονο ταξίδι της χώρας μας, να τελειώνει με όλο και ποιο
+                    γοργούς ρυθμούς.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item" id="news3">
+              <div class="container">
+                <div class="col-md-12">
+                  <img
+                    src="./news/news3.png"
+                    width="300"
+                    align="left"
+                    alt="My third news"
+                  />
+                  <h5>
+                    Μετάλλαξη του Covid-19 στην Βρετανία!
+                  </h5>
+                  <p>
+                    Η υψηλής μεταδοτικότητας παραλλαγή του SARS-CoV-2, που έχει
+                    εξαπλωθεί στον κόσμο μετά τον αρχικό εντοπισμό της στην
+                    Βρετανία στο τέλος του 2020, είναι 30% έως 100% περισσότερο
+                    θανατηφόρα σε σχέση με τα προηγούμενα γνωστά στελέχη,
+                    ανακοίνωσαν σήμερα ερευνητές.
+                  </p>
+                  <p>
+                    Σε μελέτη που συγκρίνει τα ποσοστά θνητότητας στην Βρετανία
+                    μεταξύ ατόμων που προβλήθηκαν από την παραλλαγή του
+                    κορονοϊού που ονομάζεται B.1.1.7 και ατόμων που προσβλήθηκαν
+                    από άλλα στελέχη, οι επιστήμονες διαπίστωσαν ότι το νέο
+                    στέλεχος χαρακτηρίζεται από σημαντικά μεγαλύτερη θνητότητα.
+                  </p>
+                  <p>
+                    Η παραλλαγή B.1.1.7 εντοπίσθηκε στην Βρετανία τον Σεπτέμβριο
+                    2020 και έκτοτε έχει εξαπλωθεί σε περισσότερες από 100
+                    χώρες.
+                  </p>
+                  <p>
+                    Παρουσιάζει 23 μεταλλάξεις του γενετικού κώδικα του ιού -
+                    σχετικά μεγάλος αριθμός μεταλλάξεων - και ορισμένες από
+                    αυτές παρουσίασαν πολύ μεγαλύτερη μεταδοτικότητα. Βρετανοί
+                    επιστήμονες θεωρούν ότι είναι 40% έως 70% περισσότερο
+                    μεταδοτική από τις υπόλοιπες κυρίαρχες μέχρι σήμερα
+                    παραλλαγές του κορονοϊού..
+                  </p>
+                  <p>
+                    Στην βρετανική μελέτη που δημοσιεύεται σήμερα στην British
+                    Medical Journal , η προσβολή από την νέα παραλλαγή οδήγησε
+                    σε 227 θανάτους σε δείγμα 54.906 ασθενών της Covid-19, σε
+                    σύγκριση με τους 141 θανάτους σε ίδιο δείγμα ασθενών που
+                    είχαν προσβληθεί από άλλα στελέχη.
+                  </p>
+                  <p>
+                    "Σε συνδυασμό με την ικανότητά της να μεταδίδεται με
+                    ταχύτητα, αυτό καθιστά την B.1.1.7 απειλή που πρέπει να
+                    ληφθεί σοβαρά υπ΄όψιν", δήλωσε ο Ρόμπερτ Τσάλεν, ερευνητής
+                    του Exeter University που συμμετείχε στην έρευνα.
+                  </p>
+                  <p>
+                    ΠΗΓΗ: ΑΜΠΕ
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item" id="news4">
+              <div class="container">
+                <div class="col-md-12">
+                  <img
+                    src="./news/news4.png"
+                    width="300"
+                    align="left"
+                    alt="My forth news"
+                  />
+                  <h5>COVID-19: 649.140 νέα κρούσματα παγκοσμίως.</h5>
+                  <p>
+                    Το τελευταίο 24ωρο καταγράφηκαν 649.140 νέα κρούσματα
+                    COVID-19 σε όλο τον πλανήτη και 10.206 νέοι θάνατοι, σύμφωνα
+                    με την καταμέτρηση της ιστοσελίδας Worldometer. Η Ινδία
+                    κατέγραψε πάνω από τα μισά από αυτά τα νέα κρούσματα, την
+                    ώρα που μαστίζεται από το χειρότερο κύμα της πανδημίας που
+                    σημειώθηκε στην χώρα.
+                  </p>
+                  <p>
+                    Συνολικά στα 159 εκατομμύρια έφτασε τη Δευτέρα ο αριθμός των
+                    ανθρώπων που μολύνθηκαν από τη νόσο από την αρχή της
+                    πανδημίας, ενώ οι νεκροί διεθνώς ξεπέρασαν τα 3,3
+                    εκατομμύρια. Περίπου 136,5 εκατ. έχουν αναρρώσει από τη
+                    νόσο, ενώ αυτή τη στιγμή τα ενεργά κρούσματα ανέρχονται στα
+                    19,2 εκατ., με το 99,4% να έχει ήπια συμπτώματα και το 0,6%
+                    να είναι σοβαρά/κρίσιμα. Από τις κλειστές περιπτώσεις το 98%
+                    έχει αναρρώσει και το 2% έχει αποβιώσει.
+                  </p>
+                  <p>
+                    Τα περισσότερα περιστατικά ήταν το τελευταίο 24ωρο στην
+                    Ινδία όπου καταγράφηκαν 366.499 νέα κρούσματα και 3.748
+                    θάνατοι. Στη δεύτερη θέση η Βραζιλία, όπου χθες τα νέα
+                    κρούσματα ανήλθαν στις 34.162, ενώ υπήρξαν 934 θάνατοι.
+                    Τρίτη σε αριθμό κρουσμάτων το τελευταίο 24ωρο οι ΗΠΑ με
+                    22.200 και 241 νέους θανάτους και ακολουθούν η Κολομβία με
+                    17.222 νέα κρούσματα και 497 νέους θανάτους και η Τουρκία με
+                    15.191 νέα κρούσματα και 283 νέους θανάτους.
+                  </p>
+                  <p>
+                    Οι χώρες με τα περισσότερα κρούσματα από την αρχή την
+                    πανδημίας είναι οι ΗΠΑ με 33,5 εκ. κρούσματα και 595.812
+                    θανάτους, η Ινδία με 22,6 εκ. κρούσματα και 246.146
+                    θανάτους, η Βραζιλία με 15,1 εκ. κρούσματα και 422.418
+                    θανάτους, η Γαλλία με 5,8 εκ. κρούσματα και 106.392 θανάτους
+                    και η Τουρκία με 5 εκ κρούσματα και 43.029 θανάτους.
+                  </p>
+                  <p>
+                    Υπό έλεγχο φαίνεται να τίθεται πλέον η πανδημία στο Ισραήλ,
+                    σε άλλες χώρες ωστόσο παραμένουν σε ψηλά επίπεδα τόσο ο
+                    αριθμός των κρουσμάτων όσο και των θανάτων, αλλά και των
+                    νοσηλειών.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item" id="news5">
+              <div class="container">
+                <div class="col-md-12">
+                  <img
+                    src="./news/news5.png"
+                    width="300"
+                    align="left"
+                    alt="My fifth news"
+                  />
+                  <h5>SARS-CoV-2: Στα σκαριά εμβόλιο σε κάψουλα.</h5>
+                  <p>
+                    Tη στιγμή που δισεκατομμύρια άνθρωποι παγκοσμίως αναμένουν
+                    το ραντεβού τους (ή το διπλό ραντεβού τους) για το σωτήριο
+                    «τσίμπημα» ενάντια στην ιογενή απειλή των ημερών μας, τον
+                    νέο κορωνοϊό (που σε λίγο θα θεωρείται πλέον… παλιός, τόσον
+                    καιρό που συνεχίζει να μας ταλαιπωρεί), στα εργαστήρια
+                    ετοιμάζεται η επόμενη ημέρα στον τρόπο χορήγησης των
+                    εμβολίων ενάντια στον SARS-CoV-2, η οποία υπόσχεται να
+                    καταργήσει την ανάγκη για τσιμπήματα! Εμβόλια… να τα πιεις
+                    με το ποτήρι σε μορφή κάψουλας ή εμβόλια σε μορφή ρινικού
+                    σπρέι, τα οποία στοχεύουν στο να πούμε «αντίο» στις βελόνες.
+                  </p>
+                  <p>
+                    Και όχι μόνο αυτό: οι επιστήμονες που βρίσκονται πίσω από
+                    την ανάπτυξη αυτών των… μη παρεμβατικών εμβολίων
+                    υποστηρίζουν ότι τα σκευάσματά τους εμφανίζουν πολλά και
+                    ουσιώδη πλεονεκτήματα σε σύγκριση με τα υπάρχοντα ενέσιμα
+                    εμβόλια: εκτός του ότι δεν απαιτούν ειδικές συνθήκες φύλαξης
+                    (κοινώς, τέρμα στην ανάγκη για ψύξη ή βαθιά κατάψυξη –
+                    θυμάστε προφανώς τα ειδικά μηχανήματα που χρειαζόταν να
+                    προμηθευθεί και η χώρα μας για τη συντήρηση των ευαίσθητων
+                    mRNA εμβολίων σε θερμοκρασίες -70 βαθμών Κελσίου), ούτε
+                    εξειδικευμένο προσωπικό για τη χορήγησή τους, προσφέρουν και
+                    διαφορετικού τύπου, πρώτης γραμμής ανοσία, άκρως σημαντική
+                    για να μπει νωρίς «φρένο» στον ιό προτού επιτελέσει το
+                    καταστροφικό έργο του σε όργανα όπως οι πνεύμονες και το
+                    έντερο.
+                  </p>
+                  <p>
+                    Μια από τις κύριες ομάδες που προσπαθούν να προσφέρουν στον
+                    παγκόσμιο πληθυσμό τα νέα πόσιμα εμβόλια είναι αυτή του
+                    καθηγητή Μικροβιολογίας στο Πανεπιστήμιο του Βίρτσμπουργκ
+                    στη Γερμανία Τόμας Ρούντελ, η οποία έχει ήδη ξεκινήσει την
+                    προκλινική ανάπτυξη εμβολίου για τον SARS-CoV-2 που θα
+                    λαμβάνεται σε μορφή κάψουλας.
+                  </p>
+                  <p>
+                    Ο καθηγητής Ρούντελ μιλάει στο ΒΗΜΑ-Science για την έρευνά
+                    του που ελπίζει ότι θα οδηγήσει στα κορωνο-εμβόλια του
+                    μέλλοντος και δηλώνει ότι αν οι προκλινικές μελέτες στεφθούν
+                    με επιτυχία, τότε οι κλινικές μελέτες του εμβολίου του θα
+                    ξεκινήσουν τους επόμενους μήνες.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- My Footer -->
+    <footer class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="text-center">
+              <div class="text-light">
+                Τηλ: 210-555-5555
+                <br />
+                Κιν: 69-55-55-5555
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="text-center">
+              <div class="text-light">
+                &copy; 2021 Εθνικός Οργανισμός Εμβολιασμού.
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="text-center">
+              <div class="text-light">
+                <address>
+                  Email: <a href="mailto:p.karamolegos@yahoo.gr">eoe@gov.gr</a>
+                </address>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- My go to the top button script -->
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+    <!-- A jQuery script to fix the positions of the images -->
+    <script>
+      var fixImages = function () {
+        let w = window.innerWidth;
+        let images = $("img");
+        if (w > 800) {
+          for (let i = 0; i < images.length; i++) {
+            images[i].setAttribute("align", "left");
+          }
+        } else {
+          for (let i = 0; i < images.length; i++) {
+            images[i].removeAttribute("align");
+          }
+        }
+      };
+      window.addEventListener("resize", fixImages);
+      window.addEventListener("onload", fixImages);
+      window.addEventListener("DOMContentLoaded", fixImages);
+    </script>
+
+    <!-- A jQuery script to fix the width of the images -->
+    <script>
+      let fixWidth = function () {
+        let w = window.innerWidth;
+        if (w < 450) {
+          let images = $("img");
+          for (let i = 0; i < images.length; i++) {
+            // let newWidth = 300 * (w / 450);
+            let newWidth = "80%";
+            images[i].setAttribute("width", newWidth);
+          }
+        }
+      };
+      window.addEventListener("resize", fixWidth);
+      window.addEventListener("onload", fixWidth);
+      window.addEventListener("DOMContentLoaded", fixWidth);
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

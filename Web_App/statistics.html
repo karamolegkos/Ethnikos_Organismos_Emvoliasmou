@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="el">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- My favicon -->
+    <link rel="icon" href="./images/favicon.png" type="image/png" />
+
+    <!-- My styles-->
+    <link rel="stylesheet" type="text/css" href="./styles/default_style.css" />
+    <title>Στατιστικά</title>
+  </head>
+  <body>
+    <!-- My Nav Bar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <a class="navbar-brand" href="./index.html">
+        E.O.E
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./news.html">Νέα</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./common_questions.html">Ερωτήσεις</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./vaccination.html"
+              >Ραντεβού για εμβολιασμό</a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./statistics.html">Στατιστικά</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./contact.html">Επικοινωνία</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my_back">
+      <br />
+        <h2>Στατιστικά Εμβολιασμού!</h2>
+        <p>
+          Παρακάτω, μπορείτε να επιλέξετε ημερομηνίες "από" και "έως", ώστε να δείτε τις εξής πληροφορίες:
+          <ul>
+            <li>
+              Συνολικοί Covid-19 εμβολιασμοί της Α-δόσης στην Ελλάδα για τις ημέρες που επιλέξατε.
+            </li>
+            <li>
+              Συνολικοί Covid-19 εμβολιασμοί της Β-δόσης στην Ελλάδα για τις ημέρες που επιλέξατε.
+            </li>
+            <li>
+              Συνολικοί Covid-19 εμβολιασμοί ανεξαρτήτως δόσης στην Ελλάδα για τις ημέρες που επιλέξατε.
+            </li>
+            <li>
+              Σύνολο εμβολιασμένων ανθρώπων στην Ελλάδα για τις ημέρες που επιλέξατε.
+            </li>
+          </ul>
+        </p>
+        <br />
+        <!-- Form -->
+        <form>
+          <div class="form-row">
+            <!-- From -->
+            <div class="col-md-6">
+              <label for="fromDate">Ημερομηνία "από":</label>
+              <input
+                type="date"
+                class="form-control"
+                id="fromDate"
+                value=""
+                required
+              />
+            </div>
+            <!-- To -->
+            <div class="col-md-6">
+              <label for="toDate">Ημερομηνία "έως":</label>
+              <input
+                type="date"
+                class="form-control"
+                id="toDate"
+                value=""
+                required
+              />
+            </div>
+          </div>
+          <!-- Button -->
+          <div class="form-row">
+            <div class="col-md-6">
+              <br />
+              <button class="btn btn-primary" type="button" id="myButton">
+                Δείτε τα Αποτελέσματα!
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <div id="results">
+            <h2>Τα αποτελέσματα παρακάτω:</h2>
+            <div class="table-responsive table-striped table-light">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Ημέρα</th>
+                    <th scope="col">Α-δόση</th>
+                    <th scope="col">Β-δόση</th>
+                    <th scope="col">Δόσεις</th>
+                    <th scope="col">Σύνολο Εμβολιασμένων</th>
+                  </tr>
+                </thead>
+                <tbody id="tableBody">
+                  <!-- Data will be appended in here -->
+                </tbody>
+              </table>
+            </div>
+            <br />
+        </div>
+    </div>
+
+    <!-- My Footer -->
+    <footer class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="text-center">
+              <div class="text-light">
+                Τηλ: 210-555-5555
+                <br />
+                Κιν: 69-55-55-5555
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="text-center">
+              <div class="text-light">
+                &copy; 2021 Εθνικός Οργανισμός Εμβολιασμού.
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="text-center">
+              <div class="text-light">
+                <address>
+                  Email: <a href="mailto:p.karamolegos@yahoo.gr">eoe@gov.gr</a>
+                </address>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- My call to the API -->
+    <script>
+      // A function to count needed data for a day
+      function countDataOfDay(dataToBePut){
+        let aDoseSum = 0;
+        let bDoseSum = 0;
+        let abDoseSum = 0;
+        let totalvaccinations = 0;
+        for(let i=0; i<dataToBePut.length; i++){
+          aDoseSum += dataToBePut[i].dailydose1;
+          bDoseSum += dataToBePut[i].dailydose2;
+          abDoseSum += dataToBePut[i].daytotal;
+          totalvaccinations += dataToBePut[i].totalvaccinations;
+        }
+        let myData = {
+          "aDoseSum":aDoseSum,
+          "bDoseSum":bDoseSum,
+          "abDoseSum":abDoseSum,
+          "totalvaccinations":totalvaccinations
+        };
+        return myData;
+      }
+
+      // A function to append valus on the table
+      function putOnTable(dataToBePut, date){
+        let dayData = countDataOfDay(dataToBePut);
+        let results = document.getElementById("results");
+        results.style.display = "block";
+        let tablebody = document.getElementById("tableBody");
+        // Sundays do not have any data
+        if(dayData.aDoseSum == 0 &&
+              dayData.bDoseSum == 0 &&
+              dayData.abDoseSum == 0 &&
+              dayData.totalvaccinations == 0){
+          tablebody.innerHTML += 
+          `
+                    <tr>
+                      <th scope="row">`+date+`</th>
+                      <td> <b><i>No Data Given</i></b> </td>
+                      <td> <b><i>No Data Given</i></b> </td>
+                      <td> <b><i>No Data Given</i></b> </td>
+                      <td> <b><i>No Data Given</i></b> </td>
+                    </tr>
+          `;
+        }
+        else{       // Id you have data then print them on the table
+          tablebody.innerHTML += 
+          `
+                    <tr>
+                      <th scope="row">`+date+`</th>
+                      <td>`+dayData.aDoseSum+`</td>
+                      <td>`+dayData.bDoseSum+`</td>
+                      <td>`+dayData.abDoseSum+`</td>
+                      <td>`+dayData.totalvaccinations+`</td>
+                    </tr>
+          `;
+        }
+      }
+
+      // A function to make the call for the API
+      function makeACallFor(day){
+        let data = {
+          date_from: day,
+          date_to: day
+        };
+        $.ajax({
+          url: 'https://data.gov.gr/api/v1/query/mdg_emvolio',
+          data: data,
+          dataType: 'json',
+          headers: {
+            "Authorization": "Token f71a0fa8c774fe0be4a00089ce07a5019aeb8f02"
+          },
+          success: function(responceData) {
+            // Give the responce to be printed
+            putOnTable(responceData, day);
+          }
+        });
+      }
+
+      // A function to clear the table before printing data on it
+      function clearTable(){
+        let tablebody = document.getElementById("tableBody");
+        tablebody.innerHTML = ``;
+      }
+
+      // A function to delete the results in case a wrong input is given
+      let deleteTable = function (){
+        let results = document.getElementById("results");
+        results.style.display = "none";
+      }
+
+      // A function to convert a date to a string variable
+      function dateToString(myDate){
+        let strDate = "";
+        strDate += myDate.getFullYear();
+        strDate += "-"
+        strDate += fixMonth(myDate.getMonth());
+        strDate += "-"
+        strDate += fixDay(myDate.getDate());
+        return strDate;
+      }
+
+      // A function to orchestrate the call
+      function callAPI() {
+        clearTable();
+        let dateFrom = document.getElementById("fromDate").value;
+        let dateTo = document.getElementById("toDate").value;
+        dateFrom = new Date(dateFrom);
+        dateTo = new Date(dateTo);
+        if(dateFrom > dateTo){
+          alert("Η ημερομηνία 'Από' πρέπει να είναι πριν την ημερομηνία 'Έως'!");
+          deleteTable();
+          return;
+        }
+        let today = new Date();
+        // difference in days
+        let diff = today - dateTo;
+        diff = Math.ceil(diff / (1000 * 60 * 60 * 24));
+        // An if statement to be sure that there will be data to return to the user!
+        if(diff < 2){
+          alert("Δεν έχουν καταγραφεί ακόμα δεδομένα για την ημερομηνία 'Έως' που έχετε βάλει!");
+          deleteTable();
+          return;
+        }
+        // For every day in the given days of the user
+        while(dateFrom <= dateTo){
+          // call the API
+          makeACallFor(dateToString(dateFrom))
+          dateFrom.setDate(dateFrom.getDate()+1);
+          // 50 ms delay to be sure that the API will not be late and the data will be 
+          // presented to the viewer in a nice and friendly way.
+          let start = new Date().getTime();
+          let end = start;
+          while(end < start + 70) {
+            end = new Date().getTime();
+          }
+        }
+      }
+
+      // My Event for when the button is clicked
+      document.addEventListener("DOMContentLoaded", deleteTable);
+      document.getElementById("myButton").addEventListener("click", callAPI);
+    </script>
+
+    <!-- A script for default "today" date -->
+    <script>
+      // fixes the month format
+      function fixMonth(month){
+        let myMonth = parseInt(month);
+        myMonth++;
+        if(myMonth<10){
+          myMonth = "0"+myMonth
+        }
+        return myMonth;
+      }
+      // fixes the day format
+      function fixDay(day){
+        let myDay = parseInt(day);
+        if(day < 10){
+          myDay = "0"+myDay;
+        }
+        return myDay;
+      }
+      // Gives default inputs for the dates
+      let makeDates = function(){
+        let date = new Date();
+        date.setDate(date.getDate()-1);
+        let yesterday = "";
+        yesterday += date.getFullYear();
+        yesterday += "-"
+        yesterday += fixMonth(date.getMonth());
+        yesterday += "-"
+        yesterday += fixDay(date.getDate());
+        let dateInputs = $("input");
+        dateInputs[0].setAttribute("value", yesterday);
+        dateInputs[1].setAttribute("value", yesterday);
+      }
+      // makeDates gets call when DOM content is loaded
+      window.addEventListener("DOMContentLoaded", makeDates);
+    </script>
+
+    <!-- changed to not use the slim version-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <!--
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+  -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
