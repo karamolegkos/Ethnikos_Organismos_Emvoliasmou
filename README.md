@@ -6,6 +6,8 @@ It contains the files below:
 - Web_App (Directory): A directory containing all the files needed to run the Web Application
 - Report.pdf: A report for the project in the Greek Language, containing information on how to use it.
 
+This project was made using HTML, CSS, JS (JQuery, Ajax) and the Bootstrap Framework.
+
 To Run the application download the files of the project, extract them and then just go to the files below:
 
 Web_App/index.html
