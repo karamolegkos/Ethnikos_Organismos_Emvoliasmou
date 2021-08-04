@@ -8,7 +8,7 @@ It contains the files below:
 
 This project was made using HTML, CSS, JS (JQuery, Ajax) and the Bootstrap Framework.
 
-To Run the application download the files of the project, extract them and then just go to the files below:
+To Run the application download the files of the project, extract them and then just go to the file below:
 
 Web_App/index.html
 
