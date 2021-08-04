@@ -1,6 +1,6 @@
 # Ethnikos_Organismos_Emvoliasmou
 
-"Ethniko Organismos Emvoliasmou" is a project made by me, for the subject of "Online Programming" in the Department of Digital Systems (UNiversity Of Piraeus).
+"Ethniko Organismos Emvoliasmou" is a project made by me, for the subject of "Online Programming" in the Department of Digital Systems (University Of Piraeus).
 
 It contains the files below:
 - Web_App (Directory): A directory containing all the files needed to run the Web Application
