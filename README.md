@@ -12,3 +12,5 @@ To Run the application, download the files of the project, extract them and then
 - Web_App/index.html
 
 You are now ready to browse the site :)
+
+*This project has a file as a report for a User and Technical Manual. You can get this by contacting me <a href="mailto:p.karamolegos@yahoo.gr"><b>here</b></a>.*
